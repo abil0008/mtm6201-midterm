@@ -1,5 +1,218 @@
-* {
-    margin-left: 10px;
-    margin-right: 10px;
+.logo {
+    height: 150px;
+    float: left;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+body {
+    margin: 0;
+    background-color: #222;
+}
+
+main {
+    background-color: #ff435e;
+}
+
+header {
+    background-color: #ff1c59;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+header h1 {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 50px;
+}
+
+.container1 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container2 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container3 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container4 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
     padding: 0;
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 50px 50px;
+    padding-top: 25px;
+
+    position: relative;
+}
+
+nav a,
+nav a:link
+nav a:visited {
+    color: #444;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 250ms;
+}
+
+nav a:hover {
+    color: #000;
+    text-decoration: underline;
+    transform: scale(1.4);
+}
+
+nav a:active {
+    transform: scale(1.4) translate(10px);
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #444;
+
+    position: absolute;
+    bottom: 20px;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+}
+
+.cakepop1 {
+    height: 500px;
+    width: 99.5%;
+
+}
+
+.cakepop2 {
+    height: 500px;
+    width: 100%;
+}
+
+.cakepop3 {
+    height: 500px;
+    width: 99.5%;
+}
+
+.cakepop4 {
+    height: 500px;
+    width: 100%;
+}
+
+.cakepop5 {
+    height: 500px;
+    width: 99.5%;
+}
+
+.cakepop6 {
+    height: 500px;
+    width: 100%;
+}
+
+.slogan {
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+}
+
+.slogan h2 {
+    font-size: 100px;
+    margin-top: 5px;
+    padding-top: 50px;
+}
+
+.slogan p {
+    padding-bottom: 60px;
+    font-size: 20px;
+}
+
+.products-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 10px;
+}
+
+.bread {
+    width: 490px;
+    height: 300px;
+}
+
+.cakepops {
+    width: 490px;
+    height: 300px;
+}
+
+.latte {
+    width: 490px;
+    height: 300px;
+}
+
+.products h2 {
+    text-align: center;
+    font-size: 100px;
+    margin-top: 5px;
+    padding-top: 50px;
+    color: white;
+}
+
+.products-sub {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "header header";
+    justify-items: center;
+    margin-top: 30px;
+}
+
+.product-item-4 {
+    grid-area: header;
+}
+
+.product-item-4 h3, .product-item-4 h4 {
+    text-align: center;
+}
+
+.product-item-5 h3, .product-item-5 h4 {
+    text-align: center;
+}
+
+.product-item-6 h3, .product-item-6 h4 {
+    text-align: center;
+}
+
+.bagel {
+    height: 300px;
+    width: 800px;
 }
